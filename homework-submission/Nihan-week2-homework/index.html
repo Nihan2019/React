@@ -101,9 +101,7 @@
           super(props);
           this.onSubmit = this.onSubmit.bind(this);
         }
-        componentDidMount() {
-          this.refs.itemName.focus();
-        }
+        
         onSubmit(event) {
           event.preventDefault();
           var newItemValue = this.refs.itemName.value;
